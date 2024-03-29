@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Seminar Viewer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+</head>
+
+<body>
+
+    <header class="header">
+             
+             <a href="index.html" class="logo"><img src="images/logo.png" class="logo"></a>
+
+             
+               <input type="checkbox" id="check">
+
+             <label for="check" class="icons">
+
+           <i class='bx bx-menu' id="menu-icon"></i>
+           <i class='bx bx-x' id="close-icon" ></i>
+
+             </label>
+
+             <nav class="navbar">
+                  
+                  <a href="index.html" style="--i:0;">Home</a>
+                  <a href="calender.html" style="--i:1;">Calender</a>
+                  <a href="contact.html" style="--i:2;">Contact Us</a>
+                  <a href="qrgenerator.html" style="--i:2;">Create Qr Code</a>
+
+
+             </nav>
+
+
+
+
+      </header>
+
+
+
+    <div class="container">
+        <div class="row"> 
+            <div class="col-md-12 text-right">
+                <input type="button" id="btnAdd" class="btn btn-primary para" value="Add New" />
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-12 col-sm-12 col-12 p-2 ">
+                <table id="tblData" class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr> 
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Date of Seminar</th>
+                            <th class="tdaction">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="java/table.js"></script>
+   
+</body> 
+</html>
